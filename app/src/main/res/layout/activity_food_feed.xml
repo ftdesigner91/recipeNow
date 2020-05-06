@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food_feed">
+
+
+
+        <RelativeLayout
+            android:id="@+id/foodfeed_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Food Feed"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="15pt"
+
+                />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="1890px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        >
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myGridView1"
+            android:columnWidth="100dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth">
+
+        </GridView>
+    </RelativeLayout>
+</RelativeLayout>

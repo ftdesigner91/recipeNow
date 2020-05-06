@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <RelativeLayout
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="century"
+            android:gravity="center"
+            android:text="@string/HomePage"
+            android:textColor="@color/colorAccent"
+            android:textSize="15pt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/picHoldr"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="113dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="350px"
+            android:layout_centerInParent="true"
+            tools:srcCompat="@drawable/all_recipes_img" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bttnHoldr"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="880px"
+        android:paddingHorizontal="0px">
+
+        <RelativeLayout
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginStart="45px">
+
+            <Button
+                android:id="@+id/Btn_scan"
+                android:layout_width="100dp"
+                android:layout_height="112dp"
+                android:background="@drawable/scan"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/Btn_foodfeed"
+                android:layout_width="100dp"
+                android:layout_height="112dp"
+                android:background="@drawable/food_feed"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300px"
+            android:layout_height="300px"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="45px">
+
+            <Button
+                android:id="@+id/Btn_favorites"
+                android:layout_width="100dp"
+                android:layout_height="112dp"
+                android:background="@drawable/favorites"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="900px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-30px">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="2560px"
+                    android:layout_height="450px"
+                    android:background="@drawable/feed_posts" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="2560px"
+                    android:layout_height="450px"
+                    android:background="@drawable/feed_posts1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="2560px"
+                    android:layout_height="450px"
+                    android:background="@drawable/feed_posts2" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="2560px"
+                    android:layout_height="450px"
+                    android:background="@drawable/feed_posts3" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>
